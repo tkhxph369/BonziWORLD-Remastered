@@ -1,0 +1,15 @@
+{
+  "name": "bonziworld-remastered",
+  "version": "1.0.0",
+  "description": "BonziWORLD Remastered - A modern chat client",
+  "scripts": {
+    "install": "cd src && npm install && cd ../server && npm install",
+    "build": "cd src && grunt build_www",
+    "start": "cd server && node index.js"
+  },
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+} 
