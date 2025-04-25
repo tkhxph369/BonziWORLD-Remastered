@@ -2,8 +2,8 @@ services:
   - type: web
     name: bonziworld-server
     env: node
-    buildCommand: cd src && npm install && grunt build_www && cd .. && cd server && npm install
-    startCommand: cd server && node index.js
+    buildCommand: echo "No build step needed"
+    startCommand: cd src && npm install && grunt build_www && cd .. && cd server && npm install && node index.js
     envVars:
       - key: NODE_ENV
         value: production
